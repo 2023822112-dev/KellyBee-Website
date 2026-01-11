@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelly Bee Baby Shop - About Us</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+/* ---------- Global ---------- */
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#FFB6C1;
+  color:#333;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:0 20px;
+}
+
+h2{color:#6A4BA3;}
+
+/* ---------- Header ---------- */
+header{
+  background:url('images/headershop.jpg') no-repeat center;
+  background-size:cover;
+  height:200px;
+}
+
+/* ---------- Navbar ---------- */
+nav{
+  background:linear-gradient(to right,#F9F5EE,#FAF7FF);
+  padding:20px 25px;
+  border-radius:50px;
+  box-shadow:0 4px 18px rgba(0,0,0,0.12);
+  margin:20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.nav-left{
+  display:flex;
+  gap:25px;
+  justify-content:center;
+  flex:1;
+}
+
+nav a{
+  text-decoration:none;
+  color:#6A4BA3;
+  font-weight:600;
+  padding:10px 14px;
+  border-radius:10px;
+}
+
+nav a:hover,
+nav a.active{
+  background:#E9DFFF;
+}
+
+/* languange button */
+#langBtn{
+  background:#6A4BA3;
+  color:white;
+  padding:6px 12px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* ---------- Layout ---------- */
+.main-container{
+  display:flex;
+  gap:20px;
+  margin-bottom:20px;
+  max-height: auto;
+}
+
+/* Sidebar */
+.sidebar{
+  width:210px;
+  background:#FFF0F5;
+  border-radius:30px;
+  padding:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  flex-shrink:0;
+}
+
+.sidebar-note{
+  background:#FFE4EC;
+  border-radius:15px;
+  padding:10px;
+  text-align:center;
+  color:#6A4BA3;
+  font-weight:bold;
+}
+
+/* Table operation hours */
+.operation-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+  margin-bottom: 10px;
+}
+
+.operation-table th,
+.operation-table td{
+  border:1.5px solid #6A4BA3;
+  padding:8px;
+  text-align:center;
+  border-radius:10px;
+}
+
+/* Content */
+.content{flex:2;}
+
+/* Info box */
+.info-box{
+  background:#FFF0F5;
+  border-radius:20px;
+  padding:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom:50px;
+}
+
+.info-box iframe{
+  width:99%;
+  height:200px;
+  border:0;
+  border-radius:15px;
+}
+
+/* ===== Image Section ===== */
+.image-section{
+  background:#FFF0F5;
+  border-radius:50px;
+  padding:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom:20px;
+}
+.image-section h3{
+  color:#6A4BA3;
+  text-align:center;
+  margin-bottom:10px;
+}
+.image-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
+.image-grid img{
+  width:100%;
+  max-width: 600px;
+  height:auto;
+  object-fit:cover;
+  display: block;
+  margin: 0 auto;
+  border-radius:15px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ---------- Footer ---------- */
+footer{
+  background:hotpink;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+.social-icons{
+  margin-top:10px;
+  text-align:center;
+}
+.social-icons a{
+  margin:0 10px;
+  display:inline-block;
+}
+
+.social-icons img{
+  width:40px;
+  height:40px;
+  border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header></header>
+
+<nav>
+  <div class="nav-left">
+    <a href="index.html">HOME</a>
+    <a href="product.html">PRODUCT</a>
+    <a href="aboutus.html" class="active">ABOUT US</a>
+    <a href="gallery.html">GALLERY</a>
+  </div>
+  <button id="langBtn">EN / MY</button>
+</nav>
+
+<div class="main-container container">
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <h3>Operation Hours</h3>
+  <table class="operation-table">
+    <tr><th>Day</th><th>Hours</th></tr>
+    <tr><td>SATURDAY-THURSDAY</td><td>10:00 AM - 6:00 PM</td></tr>
+    <tr><td>FRIDAY</td><td>Closed</td></tr>
+  </table>
+
+  <div class="sidebar-note">
+    📞 Contact Us:<br>
+    +609-9552534
+  </div>
+</aside>
+
+<!-- Content -->
+<div class="content">
+  <h2 id="aboutTitle">About Us</h2>
+
+  <div class="info-box">
+    <h3 id="shopName">Kelly Bee Baby Shop</h3>
+    <p><i>"WE ARE SELLING THE SUPER HIGH QUALITY BABY CLOSET"</i></p>
+    <p id="shopAddress">Address: 465, Jalan Tasek, Tanah Merah, 17500 Tanah Merah, Kelantan</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.565945651597!2d102.14700031535046!3d5.808219796162429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b69d9d5d7e2775%3A0x3856121b10340d00!2sKellybee%20Baby%20Shop!5e0!3m2!1sen!2smy!4v1702357599999!5m2!1sen!2smy" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- ===== Image===== -->
+  <div class="image-section">
+    <h3>Our Shop</h3>
+    <div class="image-grid">
+      <img src="images/shop.jpg" alt="Kelly Bee Baby Shop">
+    </div>
+  </div>
+
+  <!-- ===== TAMBAHAN: Cafe Kelly Bee Bingsu ===== -->
+  <div class="image-section">
+    <h3>Kelly Bee Bingsu ☕🍧</h3>
+    <p style="text-align:center;">
+      Apart from the baby goods store, we also have a cute cafe called <b>Kelly Bee Bingsu</b> – a relaxing place to enjoy bingsu dessert & drinks while shopping.
+    </p>
+    <div class="image-grid">
+      <img src="images/kedai2.jpg" alt="Kelly Bee Bingsu Cafe">
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="social-icons">
+  <a href="https://www.tiktok.com/@gudangkellybee/video/7536848702086909202" target="_blank">
+    <img src="images/tt.jpg" alt="TikTok">
+  </a>
+  <a href="https://www.facebook.com/KellyBee.BabyShop/?locale=ms_MY" target="_blank">
+    <img src="images/facebook.jpg" alt="Facebook">
+  </a>
+  <a href="https://shopee.com.my/kellybeebabyshop" target="_blank">
+    <img src="images/shopee.png" alt="Shopee">
+  </a>
+</div>
+
+<footer>
+© 2026 Kelly Bee Baby Shop | CLOUDIA STUDIO
+</footer>
+
+<script>
+let isEnglish = false;
+document.getElementById('langBtn').onclick = function(){
+  isEnglish = !isEnglish;
+  if(isEnglish){
+    document.getElementById('aboutTitle').innerText = "Tentang Kami";
+    document.getElementById('shopAddress').innerText = "Alamat: 465, Jalan Tasek, Tanah Merah, 17500 Tanah Merah, Kelantan";
+    this.innerText = "MY / EN";
+  } else {
+    document.getElementById('aboutTitle').innerText = "About US";
+    document.getElementById('shopAddress').innerText = "Address: 465, Jalan Tasek, Tanah Merah, 17500 Tanah Merah, Kelantan";
+    this.innerText = "EN / MY";
+  }
+};
+</script>
+
+</body>
+</html>
